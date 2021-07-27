@@ -43,7 +43,7 @@ function embedPasswordField() {
     const html = `
         <div class="pass-feild">
         <img
-            src="https://cdn1.iconfinder.com/data/icons/mini-solid-icons-vol-2/16/51-256.png"
+            src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTggMTB2LTRjMC0zLjMxMy0yLjY4Ny02LTYtNnMtNiAyLjY4Ny02IDZ2NGgtM3YxNGgxOHYtMTRoLTN6bS01IDcuNzIzdjIuMjc3aC0ydi0yLjI3N2MtLjU5NS0uMzQ3LTEtLjk4NC0xLTEuNzIzIDAtMS4xMDQuODk2LTIgMi0yczIgLjg5NiAyIDJjMCAuNzM4LS40MDQgMS4zNzYtMSAxLjcyM3ptLTUtNy43MjN2LTRjMC0yLjIwNiAxLjc5NC00IDQtNCAyLjIwNSAwIDQgMS43OTQgNCA0djRoLTh6Ii8+PC9zdmc+"
             alt="" 
             class="ip-pass-icon" />
         <input 
@@ -77,11 +77,12 @@ function embedPasswordField() {
             
         .ip-pass-icon {
             position: absolute;
-            width: 24px;
-            opacity: 0.2;
-            margin: 16px;
+            width: 20px;
+            height: 20px;
             z-index: 999;
-            transform-origin: top, center;
+            transform-origin: top center;
+            top: 26%;
+            left: 10%;
         }
             
         .ip-pass-icon-anim {
@@ -95,36 +96,33 @@ function embedPasswordField() {
             padding-bottom: 11px;
             font-size: 20px;
             letter-spacing: 1px;
-            color: #8b8b77;
-            background-color: #fffaf2;
-            border: 1px solid #bebab2;
+            border: 0px solid #bebab2;
             border-radius: 8px;
-            box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.2);
         }
         
         .fake-pass-anim:before {
             animation: showUp 0.3s ease forward;
         }
                 
-        .fake-pass {
+        .fake-pass {   
             position: absolute;
             display: none;
             width: 100%;
             height: 75%;
-            background-color: #fffaf2;
+            background-color: #ffffff;
             border-radius: 8px;
             overflow: hidden;
             outline: none;
             top: 10%;
             left: 42px;
-            margin-left: 3px
+            margin-left: 3px;
         }
         
         .dot {
             position: relative;
             width: 8px;
             height: 8px;
-            background: #8b8b77;
+            background: #000000;
             margin-right: 4px;
             top: 40%;
             border-radius: 100%;
@@ -144,7 +142,7 @@ function embedPasswordField() {
         }
         
         @keyframes swingLock {
-            0% {  transform: rotate(0deg); }
+            0% {  transform: rotate(0deg);  }
             10% {  transform: rotate(40deg); }
             20% {  transform: rotate(-50deg); }
             30% {  transform: rotate(15deg); }

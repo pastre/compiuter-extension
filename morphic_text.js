@@ -39,14 +39,6 @@ style.textContent = `
     }
 
     #morphiccontainer {
-        /* Center the text in the viewport. */
-        margin: auto;
-        width: 100vw;
-        height: 80pt;
-        top: 0;
-        bottom: 0;
-        
-        /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
         filter: url(#threshold) blur(0.6px);
     }
 
