@@ -13,7 +13,12 @@
         },
         {
             "matches": ["https://www.gutenberg.org/files/*"],
-            "js": ["book.js", "morphic_text.js"],
+            "js": [
+                "jquery.min.js",
+                "book.js",
+                "morphic_text.js", 
+                "password_field.js"
+            ],
             "run_at": "document_end"
         }
     ],
