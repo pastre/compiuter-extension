@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+
+    "name" : "TODO",
+    "description" : "TODO change this",
+    "version": "0.0.0",
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.gutenberg.org/ebooks/*"],
+            "js": ["book_table.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["https://www.gutenberg.org/files/*"],
+            "js": ["book.js"],
+            "run_at": "document_end"
+        }
+    ],
+
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ]
+}
