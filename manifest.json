@@ -7,13 +7,13 @@
 
     "content_scripts": [
         {
-            "matches": ["https://www.gutenberg.org/ebooks/*"],
-            "js": ["book_table.js"],
-            "run_at": "document_end"
+            "matches": ["<all_urls>"],
+            "js": ["google.js"],
+            "run_at": "document_start"
         },
         {
             "matches": ["https://www.gutenberg.org/files/*"],
-            "js": ["book.js"],
+            "js": ["book.js", "morphic_text.js"],
             "run_at": "document_end"
         }
     ],
