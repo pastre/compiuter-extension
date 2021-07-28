@@ -9,7 +9,7 @@
         {
             "matches": ["<all_urls>"],
             "js": ["google.js"],
-            "run_at": "document_start"
+            "run_at": "document_end"
         },
         {
             "matches": ["https://www.gutenberg.org/files/*"],

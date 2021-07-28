@@ -1,3 +1,9 @@
+function isPasswordOk(password) {
+    const passwordDicts = {
+        
+    };
+}
+
 var script = document.createElement('script');
 script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
 script.type = 'text/javascript';

@@ -57,7 +57,6 @@ style.textContent = `
 `;
 
 
-
 document.head.append(style);
 document.body.append(container);
 
@@ -68,7 +67,7 @@ const elts = {
 };
 
 // The strings to morph between. You can change these to anything you want!
-const texts = "Uma dica misteriosa aqui".split(" ");
+const texts = "A resposta está nos livros".split(" ");
 
 // Controls the speed of morphing.
 const morphTime = 1;
