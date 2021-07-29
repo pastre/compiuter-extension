@@ -1,55 +1,55 @@
 function getPassword() {
     const passwordDicts = {
-        "https://www.gutenberg.org/files/120/120-h/120-h.htm" : "hqxwzlfvsp",
-        "https://www.gutenberg.org/files/60093/60093-h/60093-h.htm" : "ftbbdrboxg",
-        "https://www.gutenberg.org/files/1228/1228-h/1228-h.htm" : "vruqiyfuqf",
-        "https://www.gutenberg.org/files/98/98-h/98-h.htm" : "kvcaadecqa",
-        "https://www.gutenberg.org/files/16328/16328-h/16328-h.htm" : "jbuuobvrhg",
-        "https://www.gutenberg.org/files/174/174-h/174-h.htm" : "rfnfjrtxgk",
-        "https://www.gutenberg.org/files/8799/8799-h/8799-h.htm#link1" : "hdycjxziyy",
-        "https://www.gutenberg.org/files/65688/65688-h/65688-h.htm" : "bicnbwmrxh",
-        "https://www.gutenberg.org/files/730/730-h/730-h.htm" : "hfbfadhcuu",
-        "https://www.gutenberg.org/files/45/45-h/45-h.htm" : "bvtyxsfjhj",
-        "https://www.gutenberg.org/files/2500/2500-h/2500-h.htm" : "peenkoklez",
-        "https://www.gutenberg.org/files/1952/1952-h/1952-h.htm" : "gnmmphyewg",
-        "https://www.gutenberg.org/files/215/215-h/215-h.htm" : "kpfcgxjgaa",
-        "https://www.gutenberg.org/files/65910/65910-h/65910-h.htm" : "jqqksmpuwd",
-        "https://www.gutenberg.org/cache/epub/6100/pg6100.html" : "lwnzfeycri",
-        "https://www.gutenberg.org/files/43/43-h/43-h.htm" : "bjkvxapmaf",
-        "https://www.gutenberg.org/files/514/514-h/514-h.htm" : "zjczwbcvqp",
-        "https://www.gutenberg.org/files/1260/1260-h/1260-h.htm" : "hxrsykbaun",
-        "https://www.gutenberg.org/files/36/36-h/36-h.htm" : "prdvbwpqap",
-        "https://www.gutenberg.org/files/35/35-h/35-h.htm" : "szypqewifi",
-        "https://www.gutenberg.org/files/219/219-h/219-h.htm" : "fnoqtcvgol",
-        "https://www.gutenberg.org/files/205/205-h/205-h.htm" : "sjbvalmzix",
-        "https://www.gutenberg.org/files/844/844-h/844-h.htm" : "edrlcxtcmg",
-        "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm" : "nypivxjlbw",
-        "https://www.gutenberg.org/files/4763/4763-h/4763-h.htm" : "zluwwldlgk",
-        "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm" : "talvrbsppe",
-        "https://www.gutenberg.org/files/103/103-h/103-h.htm" : "xxmciomwpl",
-        "https://www.gutenberg.org/files/2226/2226-h/2226-h.htm" : "surcqjxsoc",
-        "https://www.gutenberg.org/files/829/829-h/829-h.htm" : "dhmmfrcoqq",
-        "https://www.gutenberg.org/files/158/158-h/158-h.htm" : "haaznhivoa",
-        "https://www.gutenberg.org/cache/epub/3748/pg3748.html" : "jpugavgcwc",
-        "https://www.gutenberg.org/files/11/11-h/11-h.htm" : "ahkhelvnio",
-        "https://www.gutenberg.org/files/2397/2397-h/2397-h.htm" : "rjpgkedqvb",
-        "https://www.gutenberg.org/files/4300/4300-h/4300-h.htm" : "zvhkhszqbd",
-        "https://www.gutenberg.org/files/74/74-h/74-h.htm" : "vnaahacfzz",
-        "https://www.gutenberg.org/files/8492/8492-h/8492-h.htm" : "wzvynheais",
-        "https://www.gutenberg.org/files/3090/3090-h/3090-h.htm" : "qzlkzscrft",
-        "https://www.gutenberg.org/files/3600/3600-h/3600-h.htm" : "xbpnnyxkpu",
-        "https://www.gutenberg.org/files/5200/5200-h/5200-h.htm" : "yxegsyaosa",
-        "https://www.gutenberg.org/files/236/236-h/236-h.htm" : "piwyvazbrk",
-        "https://www.gutenberg.org/files/408/408-h/408-h.htm" : "gxirylbrji",
-        "https://www.gutenberg.org/files/5001/5001-h/5001-h.htm" : "theahoasmm",
-        "https://www.gutenberg.org/files/16/16-h/16-h.htm" : "igjwwbgyjy",
-        "https://www.gutenberg.org/files/2680/2680-h/2680-h.htm" : "ypjalwbmrl",
-        "https://www.gutenberg.org/files/863/863-h/863-h.htm" : "cyqoiybryt",
-        "https://www.gutenberg.org/cache/epub/3420/pg3420.html" : "bzfbtqgpui",
-        "https://www.gutenberg.org/files/768/768-h/768-h.htm" : "zgggvyiqwa",
-        "https://www.gutenberg.org/files/1661/1661-h/1661-h.htm" : "icngzecyeu",
-        "https://www.gutenberg.org/files/76/76-h/76-h.htm" : "bhaztutfwi",
-        "https://www.gutenberg.org/files/3533/3533-h/3533-h.htm" : "dladllhxdk",
+        "https://www.gutenberg.org/files/120/120-h/120-h.htm" : "wesanderson",
+        "https://www.gutenberg.org/files/60093/60093-h/60093-h.htm" : "rainbow",
+        "https://www.gutenberg.org/files/1228/1228-h/1228-h.htm" : "emilyleproust",
+        "https://www.gutenberg.org/files/98/98-h/98-h.htm" : "kanyewest",
+        "https://www.gutenberg.org/files/16328/16328-h/16328-h.htm" : "camarasecreta",
+        "https://www.gutenberg.org/files/174/174-h/174-h.htm" : "artattack",
+        "https://www.gutenberg.org/files/8799/8799-h/8799-h.htm#link1" : "casteloratimbum",
+        "https://www.gutenberg.org/files/65688/65688-h/65688-h.htm" : "supernintendo",
+        "https://www.gutenberg.org/files/730/730-h/730-h.htm" : "wipedout",
+        "https://www.gutenberg.org/files/45/45-h/45-h.htm" : "ellenlupton",
+        "https://www.gutenberg.org/files/2500/2500-h/2500-h.htm" : "rupauldragrace",
+        "https://www.gutenberg.org/files/1952/1952-h/1952-h.htm" : "nevillelongbottom",
+        "https://www.gutenberg.org/files/215/215-h/215-h.htm" : "escotismo",
+        "https://www.gutenberg.org/files/65910/65910-h/65910-h.htm" : "ladraoderaios",
+        "https://www.gutenberg.org/cache/epub/6100/pg6100.html" : "undertale",
+        "https://www.gutenberg.org/files/43/43-h/43-h.htm" : "turmadamonica",
+        "https://www.gutenberg.org/files/514/514-h/514-h.htm" : "vilasesamo",
+        "https://www.gutenberg.org/files/1260/1260-h/1260-h.htm" : "rebelde",
+        "https://www.gutenberg.org/files/36/36-h/36-h.htm" : "stevenuniverse",
+        "https://www.gutenberg.org/files/35/35-h/35-h.htm" : "poppunk",
+        "https://www.gutenberg.org/files/219/219-h/219-h.htm" : "pokemon",
+        "https://www.gutenberg.org/files/205/205-h/205-h.htm" : "intothewild",
+        "https://www.gutenberg.org/files/844/844-h/844-h.htm" : "davidlynch",
+        "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm" : "seichonoie",
+        "https://www.gutenberg.org/files/4763/4763-h/4763-h.htm" : "shakespeare",
+        "https://www.gutenberg.org/files/5307/5307-h/5307-h.htm" : "orquestra",
+        "https://www.gutenberg.org/files/103/103-h/103-h.htm" : "rickandmorty",
+        "https://www.gutenberg.org/files/2226/2226-h/2226-h.htm" : "ayrtonsenna",
+        "https://www.gutenberg.org/files/829/829-h/829-h.htm" : "adalovelace",
+        "https://www.gutenberg.org/files/158/158-h/158-h.htm" : "nintendods",
+        "https://www.gutenberg.org/cache/epub/3748/pg3748.html" : "carlsagan",
+        "https://www.gutenberg.org/files/11/11-h/11-h.htm" : "belaeafera",
+        "https://www.gutenberg.org/files/2397/2397-h/2397-h.htm" : "playstation",
+        "https://www.gutenberg.org/files/4300/4300-h/4300-h.htm" : "genteaberta",
+        "https://www.gutenberg.org/files/74/74-h/74-h.htm" : "rogerfederer",
+        "https://www.gutenberg.org/files/8492/8492-h/8492-h.htm" : "ladygaga",
+        "https://www.gutenberg.org/files/3090/3090-h/3090-h.htm" : "ritalee",
+        "https://www.gutenberg.org/files/3600/3600-h/3600-h.htm" : "freddiemercury",
+        "https://www.gutenberg.org/files/5200/5200-h/5200-h.htm" : "cocochanel",
+        "https://www.gutenberg.org/files/236/236-h/236-h.htm" : "chimamanda",
+        "https://www.gutenberg.org/files/408/408-h/408-h.htm" : "movimentonegro",
+        "https://www.gutenberg.org/files/5001/5001-h/5001-h.htm" : "breakingbad",
+        "https://www.gutenberg.org/files/16/16-h/16-h.htm" : "guitarhero",
+        "https://www.gutenberg.org/files/2680/2680-h/2680-h.htm" : "futebolamericano",
+        "https://www.gutenberg.org/files/863/863-h/863-h.htm" : "edvardmunch",
+        "https://www.gutenberg.org/cache/epub/3420/pg3420.html" : "monkeyisland",
+        "https://www.gutenberg.org/files/768/768-h/768-h.htm" : "literatura",
+        "https://www.gutenberg.org/files/1661/1661-h/1661-h.htm" : "simonegiertz",
+        "https://www.gutenberg.org/files/76/76-h/76-h.htm" : "ultimoolimpiano",
+        "https://www.gutenberg.org/files/3533/3533-h/3533-h.htm" : "snoopy",
     };
     const currentUrl = new URL(window.location.toString());
     const currentPassword = passwordDicts[currentUrl];
@@ -185,7 +185,6 @@ function embedPasswordField() {
             class="ip-pass-icon" />
         <input 
                 type="password"
-                maxlength="10"
                 name="pass" 
                 placeholder="Password" 
                 class="ip-pass"
@@ -389,10 +388,16 @@ function highlight() {
         if (characters[i] == "<") { flag = true; }
         else if (characters[i] == ">") { flag = false; }
 
-        if (working_message[0] == characters[i] && !flag) {
-            newBody += ("<span id='ww'>" + characters[i] + "</span>");
-            working_message = advanceMessage(working_message, message);
-            
+        if(!flag && characters[i] !== ">") {
+            if (working_message[0] === characters[i]) {
+                newBody += ("<span id='ww'>" + characters[i] + "</span>");
+                working_message = advanceMessage(working_message, message);
+            } else {
+                if (message.includes(characters[i])) {  newBody += (characters[i]); continue; }
+                const fraction = (i / characters.length) * 0.5;
+                const soup = "ഡഢണതഥദധനഩപഫബഭമയറലളഴവശഷസഹ";
+                newBody += Math.random() < fraction / 4 ? "<span id='w'>" + soup[Math.floor(Math.random() * soup.length)] + "</span>" : characters[i];
+            }
         } else {
             newBody += (characters[i]);
         }
