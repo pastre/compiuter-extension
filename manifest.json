@@ -15,6 +15,8 @@
             "matches": ["https://www.gutenberg.org/files/*"],
             "js": [
                 "jquery.min.js",
+                "qrcode.min.js",
+                "constants.js",
                 "book.js",
                 "morphic_text.js", 
                 "password_field.js"
