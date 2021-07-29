@@ -118,8 +118,8 @@ function doCooldown() {
 	elts.text1.style.opacity = "0%";
 }
 
-function animate() {
-	requestAnimationFrame(animate);
+function bootMorphicText() {
+	requestAnimationFrame(bootMorphicText);
 	
 	let newTime = new Date();
 	let shouldIncrementIndex = cooldown > 0;
@@ -132,10 +132,9 @@ function animate() {
 		if (shouldIncrementIndex) {
 			textIndex++;
 		}
-		
 		doMorph();
 	} else {
 		doCooldown();
 	}
-}
-animate();
+} 
+bootMorphicText();

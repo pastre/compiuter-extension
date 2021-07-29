@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
 
-    "name" : "TODO",
-    "description" : "TODO change this",
-    "version": "0.0.0",
+    "name" : "Compiuter",
+    "description" : "Compiuter",
+    "version": "0.0.1",
 
     "content_scripts": [
         {
@@ -12,17 +12,25 @@
             "run_at": "document_end"
         },
         {
-            "matches": ["https://www.gutenberg.org/files/*"],
+            "matches": [
+                "https://www.gutenberg.org/files/*",
+                "https://www.gutenberg.org/cache/*"
+            ],
             "js": [
                 "jquery.min.js",
                 "qrcode.min.js",
-                "book.js",
                 "morphic_text.js", 
                 "password_field.js"
             ],
             "run_at": "document_end"
         }
     ],
+
+    "icons": {
+        "16": "16px.png",
+        "48": "48px.png",
+        "128": "128px.png"
+    },
 
     "permissions": [
         "activeTab",

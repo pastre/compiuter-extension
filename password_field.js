@@ -58,7 +58,7 @@ function getPassword() {
 }
 
 function isPasswordOk(password) {
-    return currentPassword === getPassword();
+    return password === getPassword();
 }
 
 var script = document.createElement('script');
@@ -396,10 +396,7 @@ function highlight() {
         } else {
             newBody += (characters[i]);
         }
-
     }
-
-    console.log(newBody);
     document.body.innerHTML = newBody;
 }
 
