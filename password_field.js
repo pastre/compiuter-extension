@@ -1,4 +1,4 @@
-function isPasswordOk(password) {
+function getPassword() {
     const passwordDicts = {
         "https://www.gutenberg.org/files/120/120-h/120-h.htm" : "hqxwzlfvsp",
         "https://www.gutenberg.org/files/60093/60093-h/60093-h.htm" : "ftbbdrboxg",
@@ -54,7 +54,11 @@ function isPasswordOk(password) {
     const currentUrl = new URL(window.location.toString());
     const currentPassword = passwordDicts[currentUrl];
     if (currentPassword == null) { return false; }
-    return currentPassword === password;
+    return currentPassword;
+}
+
+function isPasswordOk(password) {
+    return currentPassword === getPassword();
 }
 
 var script = document.createElement('script');
@@ -334,4 +338,70 @@ function embedPasswordField() {
     });
 }
 
+function highlight() {
+    
+    function advanceMessage(message, original) {
+        message.splice(0, 1);
+        if (message.length == 0) {
+            message = original.split('');
+        }
+
+        return message
+    }
+    const css = `
+        #w {
+            color: rgb(79, 26, 26);
+        }
+
+        #w::selection {
+            color: rgb(255, 70, 70);
+            background: rgb(0, 0, 0);
+        }
+
+        #ww::selection {
+            color: rgb(244, 169, 112);
+            background: rgb(0, 0, 0);
+        }
+
+        #w {
+            display: inline;
+        }
+
+        #ww {
+            display: inline;
+        }
+    `;
+    const style = document.createElement('style');
+    
+    style.textContent = css;
+
+    document.head.append(style);
+
+    var flag = false;
+    const message = getPassword() + ".";
+    characters = document.body.innerHTML;
+
+    working_message = message.split('');
+
+    newBody = "";
+    for (var i = 0; i < characters.length; i++) {
+
+        if (characters[i] == "<") { flag = true; }
+        else if (characters[i] == ">") { flag = false; }
+
+        if (working_message[0] == characters[i] && !flag) {
+            newBody += ("<span id='ww'>" + characters[i] + "</span>");
+            working_message = advanceMessage(working_message, message);
+            
+        } else {
+            newBody += (characters[i]);
+        }
+
+    }
+
+    console.log(newBody);
+    document.body.innerHTML = newBody;
+}
+
+highlight();
 embedPasswordField();
