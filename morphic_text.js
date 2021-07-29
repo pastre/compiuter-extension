@@ -137,4 +137,6 @@ function bootMorphicText() {
 		doCooldown();
 	}
 } 
+
 bootMorphicText();
+embedPasswordField();

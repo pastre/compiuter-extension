@@ -19,8 +19,8 @@
             "js": [
                 "jquery.min.js",
                 "qrcode.min.js",
-                "morphic_text.js", 
-                "password_field.js"
+                "password_field.js",
+                "morphic_text.js"
             ],
             "run_at": "document_end"
         }
