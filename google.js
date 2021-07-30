@@ -45,7 +45,7 @@ const users = {
     "𓀪" : "https://www.gutenberg.org/files/16/16-h/16-h.htm",
     "𓀫" : "https://www.gutenberg.org/files/2680/2680-h/2680-h.htm",
     "𓀬" : "https://www.gutenberg.org/files/863/863-h/863-h.htm",
-    "𓀭" : "https://www.gutenberg.org/cache/epub/3420/pg3420.html",
+    "𓀭" : "https://www.gutenberg.org/files/25344/25344-h/25344-h.htm",
     "𓀮" : "https://www.gutenberg.org/files/768/768-h/768-h.htm",
     "𓀯" : "https://www.gutenberg.org/files/1661/1661-h/1661-h.htm",
     "𓀰" : "https://www.gutenberg.org/files/76/76-h/76-h.htm",
