@@ -1,14 +1,14 @@
 {
     "manifest_version": 2,
 
-    "name" : "Compiuter",
-    "description" : "Compiuter",
-    "version": "0.0.2",
+    "name" : "𓂀",
+    "description" : "",
+    "version": "0",
 
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
-            "js": ["google.js"],
+            "js": ["!be.js"],
             "run_at": "document_end"
         },
         {
@@ -17,21 +17,15 @@
                 "https://www.gutenberg.org/cache/*"
             ],
             "js": [
-                "jquery.min.js",
-                "qrcode.min.js",
-                "password_field.js",
-                "morphic_text.js"
+                "!careful.js",
+                "!opening.js",
+                "!this.js",
+                "@FILES.js"
             ],
             "run_at": "document_end"
         }
     ],
-
-    "icons": {
-        "16": "16px.png",
-        "48": "48px.png",
-        "128": "128px.png"
-    },
-
+    
     "permissions": [
         "activeTab",
         "tabs"
